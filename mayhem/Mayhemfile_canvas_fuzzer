@@ -1,0 +1,9 @@
+project: savantenvs/ftxui
+target: ftxui-canvas_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ftxui-canvas_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/ftxui-canvas_fuzzer
+    libfuzzer: true
+    timeout: 10

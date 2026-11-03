@@ -1,0 +1,9 @@
+project: savantenvs/ftxui
+target: ftxui-utf8_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ftxui-utf8_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/ftxui-utf8_fuzzer
+    libfuzzer: true
+    timeout: 10
